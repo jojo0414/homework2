@@ -11,37 +11,17 @@ struct ContentView: View {
     var body: some View {
         TabView
         {
-            Text("主頁（全角色）")
+            Text("主頁（遊戲介紹）")
                 .tabItem {
                     Label("主頁", systemImage: "house.fill")
                 }
-            Text("火")
+            Text("角色（個屬性列表）")
                 .tabItem {
-                    Label("火", systemImage: "")
+                    Label("角色", systemImage: "person.fill")
                 }
-            Text("水")
+            Text("地圖（三個國度的介紹）")
                 .tabItem {
-                    Label("水", systemImage: "")
-                }
-            Text("風")
-                .tabItem {
-                    Label("風", systemImage: "")
-                }
-            Text("雷")
-                .tabItem {
-                    Label("雷", systemImage: "")
-                }
-            Text("草")
-                .tabItem {
-                    Label("草", systemImage: "")
-                }
-            Text("冰")
-                .tabItem {
-                    Label("冰", systemImage: "")
-                }
-            Text("炎")
-                .tabItem {
-                    Label("炎", systemImage: "")
+                    Label("地圖", systemImage: "map.fill")
                 }
         }
     }
