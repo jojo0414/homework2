@@ -11,6 +11,7 @@
 		479192B1272DA26B00FF2677 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479192B0272DA26B00FF2677 /* ContentView.swift */; };
 		479192B3272DA27300FF2677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479192B2272DA27300FF2677 /* Assets.xcassets */; };
 		479192B6272DA27300FF2677 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479192B5272DA27300FF2677 /* Preview Assets.xcassets */; };
+		479192BF272FD54F00FF2677 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479192BE272FD54F00FF2677 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		479192B2272DA27300FF2677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		479192B5272DA27300FF2677 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		479192B7272DA27300FF2677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		479192BE272FD54F00FF2677 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				479192AE272DA26B00FF2677 /* homework2App.swift */,
 				479192B0272DA26B00FF2677 /* ContentView.swift */,
+				479192BE272FD54F00FF2677 /* Character.swift */,
 				479192B2272DA27300FF2677 /* Assets.xcassets */,
 				479192B7272DA27300FF2677 /* Info.plist */,
 				479192B4272DA27300FF2677 /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				479192BF272FD54F00FF2677 /* Character.swift in Sources */,
 				479192B1272DA26B00FF2677 /* ContentView.swift in Sources */,
 				479192AF272DA26B00FF2677 /* homework2App.swift in Sources */,
 			);

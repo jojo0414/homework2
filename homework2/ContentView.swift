@@ -15,7 +15,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("主頁", systemImage: "house.fill")
                 }
-            Text("角色（個屬性列表）")
+            Character()
                 .tabItem {
                     Label("角色", systemImage: "person.fill")
                 }
