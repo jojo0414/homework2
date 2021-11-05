@@ -59,7 +59,11 @@ struct Character: View {
                         let rows = [GridItem()]
                         LazyHGrid(rows: rows){
                             ForEach(elements.indices){ item in
-                                ElementView(element: elements[item])
+                                NavigationLink(
+                                    destination: ElementPageView(element: elements[item], cards: cards),
+                                    label: {
+                                        ElementView(element: elements[item])
+                                    })
                             }
                         }
                     }
@@ -82,6 +86,29 @@ struct Character: View {
             }
             .navigationTitle("角色")
         }
+    }
+}
+
+struct ElementPageView: View {
+    let element: String
+    let cards: [Card]
+    
+    var body: some View{
+        NavigationView {
+            List{
+                ForEach(cards) { card in
+                    if card.element == element{
+                        NavigationLink(
+                            destination: CharacterView(name: card.name, element: card.element, wepon: card.wepon, content: card.content),
+                            label: {
+                                CardView(card: card)
+                            })
+                    }
+                }
+            }
+            .navigationTitle(element)
+        }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -111,24 +138,26 @@ struct CharacterView: View {
                     }
                 }
             }
-        }
-        .toolbar(content: {
-            ToolbarItem(placement: .principal) {
-                HStack{
-                    Image(element)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 25, height: 25)
+            .toolbar(content: {
+                ToolbarItem(placement: .principal) {
+                    HStack{
+                        Image(element)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 25, height: 25)
 
-                    Text(name)
-                        .font(.largeTitle)
+                        Text(name)
+                            .font(.largeTitle)
+                    }
                 }
-            }
-        })
-        .navigationBarTitleDisplayMode(.inline)
+            })
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        
     }
     
 }
+
 
 
 struct CardView: View {

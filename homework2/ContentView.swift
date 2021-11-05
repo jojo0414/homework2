@@ -19,7 +19,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("角色", systemImage: "person.fill")
                 }
-            Text("地圖（三個國度的介紹）")
+            Map()
                 .tabItem {
                     Label("地圖", systemImage: "map.fill")
                 }
