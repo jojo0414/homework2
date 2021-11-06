@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         TabView
         {
-            Text("主頁（遊戲介紹）")
+            Home()
                 .tabItem {
                     Label("主頁", systemImage: "house.fill")
                 }

@@ -92,13 +92,13 @@ struct CountryPageView: View {
                         Spacer()
                     }
                     Rectangle()
-                    .aspectRatio(5/3, contentMode: .fit)
-                    .overlay(
-                        Image(country.name)
-                            .resizable()
-                            .scaledToFill()
-                    )
-                    .clipped()
+                        .aspectRatio(5/3, contentMode: .fit)
+                        .overlay(
+                            Image(country.name)
+                                .resizable()
+                                .scaledToFill()
+                        )
+                        .clipped()
                         .padding()
                     
                     Text(country.content)
@@ -115,13 +115,13 @@ struct CountryPageView: View {
                             Spacer()
                         }
                         Rectangle()
-                        .aspectRatio(5/3, contentMode: .fit)
-                        .overlay(
-                            Image(photo.name)
-                                .resizable()
-                                .scaledToFill()
-                        )
-                        .clipped()
+                            .aspectRatio(5/3, contentMode: .fit)
+                            .overlay(
+                                Image(photo.name)
+                                    .resizable()
+                                    .scaledToFill()
+                            )
+                            .clipped()
                             .padding()
                         
                         Text(photo.content)
