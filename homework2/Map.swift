@@ -170,6 +170,8 @@ struct CountryView: View {
     }
 }
 
+
+
 struct Map_Previews: PreviewProvider {
     static var previews: some View {
         Group {

@@ -23,8 +23,8 @@ struct IconLink: Identifiable {
 struct Home: View {
     
     let videos = [
-        Video(name: "捕風的異鄉人", url: "https://bit.ly/3EOCzS6"),
-        Video(name: "迫近的客星", url: "https://bit.ly/2YkkwUa"),
+        Video(name: "捕風的異鄉人", url: "https://bit.ly/3GVX7tM"),
+        Video(name: "迫近的客星", url: "https://bit.ly/3o5xa2q"),
         Video(name: "白噩與黑龍", url: "https://bit.ly/3BL07Fy"),
         Video(name: "明霄升海平", url: "https://bit.ly/3wlPEze"),
         Video(name: "風花的邀约", url: "https://bit.ly/2Yn7sxn"),
@@ -116,6 +116,8 @@ struct Home: View {
     }
 }
 
+
+
 struct VideoView: View {
     
     let video: Video
@@ -124,6 +126,8 @@ struct VideoView: View {
         VideoPlayer(player: AVPlayer(url: URL(string: video.url)!))
     }
 }
+
+
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {

@@ -256,8 +256,6 @@ struct CharacterView: View {
     
 }
 
-
-
 struct CardView: View {
     let card: Card
     
@@ -292,6 +290,8 @@ struct ElementView: View {
         }
     }
 }
+
+
 
 struct Character_Previews: PreviewProvider {
     static var previews: some View {
