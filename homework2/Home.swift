@@ -12,6 +12,7 @@ struct Video: Identifiable{
     let id = UUID()
     let name: String
     let url: String
+    let year: String
 }
 
 struct IconLink: Identifiable {
@@ -22,17 +23,19 @@ struct IconLink: Identifiable {
 
 struct Home: View {
     
+    let years = ["2020", "2021"]
+    
     let videos = [
-        Video(name: "捕風的異鄉人", url: "https://bit.ly/3GVX7tM"),
-        Video(name: "迫近的客星", url: "https://bit.ly/3o5xa2q"),
-        Video(name: "白噩與黑龍", url: "https://bit.ly/3BL07Fy"),
-        Video(name: "明霄升海平", url: "https://bit.ly/3wlPEze"),
-        Video(name: "風花的邀约", url: "https://bit.ly/2Yn7sxn"),
-        Video(name: "玉扉繞塵歌", url: "https://bit.ly/31we9hP"),
-        Video(name: "盛夏！海島？大冒險！", url: "https://bit.ly/3oaftii"),
-        Video(name: "不動鳴神，泡影斷滅", url: "https://bit.ly/3ka7YGA"),
-        Video(name: "韶光撫月，天下人間", url: "https://bit.ly/2YlXKeG"),
-        Video(name: "霧海懸謎境", url: "https://bit.ly/3CUcbpc")
+        Video(name: "捕風的異鄉人", url: "https://bit.ly/3GVX7tM", year: "2020"),
+        Video(name: "迫近的客星", url: "https://bit.ly/3o5xa2q", year: "2020"),
+        Video(name: "白噩與黑龍", url: "https://bit.ly/3BL07Fy", year: "2020"),
+        Video(name: "明霄升海平", url: "https://bit.ly/3wlPEze", year: "2021"),
+        Video(name: "風花的邀约", url: "https://bit.ly/2Yn7sxn", year: "2021"),
+        Video(name: "玉扉繞塵歌", url: "https://bit.ly/31we9hP", year: "2021"),
+        Video(name: "盛夏！海島？大冒險！", url: "https://bit.ly/3oaftii", year: "2021"),
+        Video(name: "不動鳴神，泡影斷滅", url: "https://bit.ly/3ka7YGA", year: "2021"),
+        Video(name: "韶光撫月，天下人間", url: "https://bit.ly/2YlXKeG", year: "2021"),
+        Video(name: "霧海懸謎境", url: "https://bit.ly/3CUcbpc", year: "2021")
     ]
     
     let links = [
@@ -67,26 +70,33 @@ struct Home: View {
                     }
                     
                     let columns = [GridItem(.adaptive(minimum: 150))]
-                    LazyVGrid(columns: columns) {
-                        ForEach(videos) { video in
-                            NavigationLink(
-                                destination: VideoView(video: video),
-                                label: {
-                                    VStack{
-                                        Rectangle()
-                                            .aspectRatio(5/3, contentMode: .fit)
-                                            .overlay(
-                                                Image(video.name)
-                                                    .resizable()
-                                                    .scaledToFill()
-                                            )
-                                            .clipped()
-                                            .padding()
-                                        
-                                        Text(video.name)
+                    LazyVGrid(columns: columns, pinnedViews: .sectionHeaders) {
+                        ForEach(years.indices){item in
+                            Section(header: Text(years[item])) {
+                                ForEach(videos) { video in
+                                    if years[item] == video.year{
+                                        NavigationLink(
+                                            destination: VideoView(video: video),
+                                            label: {
+                                                VStack{
+                                                    Rectangle()
+                                                        .aspectRatio(5/3, contentMode: .fit)
+                                                        .overlay(
+                                                            Image(video.name)
+                                                                .resizable()
+                                                                .scaledToFill()
+                                                        )
+                                                        .clipped()
+                                                        .padding()
+                                                    
+                                                    Text(video.name)
+                                                }
+                                            })
                                     }
-                                })
+                                }
+                            }
                         }
+                        
                     }
                     
                     HStack{

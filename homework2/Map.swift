@@ -57,8 +57,7 @@ struct Map: View {
         NavigationView {
             ScrollView(.vertical) {
                 VStack{
-                    Text("這裡是七種元素交匯的幻想世界「提瓦特」\n\n在遙遠的過去\n人們藉由對神靈的信仰\n獲賜了驅動元素的力量\n得以在荒野中築起家園\n\n五百年前\n古國的覆滅卻使得天地變異…\n\n如今\n席捲大陸的災難已經停息\n和平卻仍未如期光臨\n")
-                        .multilineTextAlignment(.leading)
+                    TextView()
                     
                     let columns = [GridItem(.adaptive(minimum: 200))]
                     LazyVGrid(columns: columns) {
@@ -73,6 +72,20 @@ struct Map: View {
                 }
             }
             .navigationTitle("提瓦特")
+        }
+    }
+}
+
+struct TextView: View {
+    var body: some View{
+        VStack(alignment: .leading){
+            Text("這裡是七種元素交匯的幻想世界") + Text("提瓦特\n").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor(Color.orange)
+            Text("在遙遠的過去").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor(.pink) +
+                Text("\n人們藉由對神靈的信仰\n獲賜了驅動元素的力量\n得以在荒野中築起家園\n")
+            Text("五百年前").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor(.pink) +
+                Text("\n古國的覆滅卻使得天地變異…\n")
+            Text("如今").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundColor(.pink) +
+                Text("\n席捲大陸的災難已經停息\n和平卻仍未如期光臨\n")
         }
     }
 }
@@ -162,6 +175,7 @@ struct CountryView: View {
                     Image(country)
                         .resizable()
                         .scaledToFill()
+                        .blur(radius: 2)
                 )
                 .clipped()
                 .padding()

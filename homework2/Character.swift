@@ -24,7 +24,7 @@ struct Character: View {
         "風",
         "雷",
         "冰",
-        "岩",
+        "岩"
     ]
     
     let countries = [
@@ -37,20 +37,20 @@ struct Character: View {
     let cards = [
         Card(name: "溫迪", element: "風",wepon: "弓", content: "來路不明的吟游詩人\n有時唱一些老掉牙的舊詩\n有時又會唱出誰也沒聽過的新歌\n\n喜歡蘋果和熱鬧的氣氛\n討厭乳酪和切黏糊糊的物質\n\n在引導“風”的元素力時\n元素的塑形往往外顯為羽毛\n因為他很中意看上去輕飄飄的東西\n", country: "蒙德"),
         Card(name: "迪盧克", element: "火", wepon: "雙手劍", content:
-                "身為蒙德城第一富豪\n風度翩翩的迪盧克總是以完美的貴公子形象示人\n\n然而他真實的一面\n是秉承堅定信念的戰士\n他那「不惜一切守護蒙德」的意志猶如火焰般熾熱\n令他能以恐怖的攻勢\n毫不留情地將一切敵人擊潰\n", country: "蒙德"),
+                "身為蒙德城第一富豪\n風度翩翩的迪盧克總是以完美的貴公子形象示人\n\n然而他真實的一面\n是秉承堅定信念的戰士\n他那「不惜一切守護蒙德」的意志\n猶如火焰般熾熱\n令他能以恐怖的攻勢\n毫不留情地將一切敵人擊潰\n", country: "蒙德"),
         Card(name: "琴", element: "風", wepon: "單手劍", content: "身為西風騎土團的代理團長\n琴一直忠於職守\n為人們帶來安寧\n雖然並非天賦異票\n但通過刻苦訓練\n如今的她已然能夠獨當一面\n\n當風魔龍的威脅開始臨近\n這位元可靠的代理團長早已做好了準備\n誓要守護蒙德\n", country: "蒙德"),
         Card(name: "可莉", element: "火", wepon: "法器", content: "西風騎土團\n火花騎士\n永遠伴隨閃光與爆炸出現！\n\n然後在琴團長嚴厲的目光注視下默默消失\n\n雖然新炸藥的配方\n很多都是在被關禁閉的時候想出來的……\n\n 但如果不被關禁閉的話\n就更好了\n", country: "蒙德"),
         Card(name: "莫娜", element: "水", wepon: "法器", content: "神秘的少女占星術士\n聲稱自己是「偉大的占星術士莫娜」\n擁有與名號相符的不俗實力\n博學而高傲\n\n儘管過著拮据、清貧的生活\n但她堅決不用占卜來牟利……\n正是這種堅持\n導致莫娜總是在為生計發愁\n", country: "蒙德"),
         Card(name: "阿貝多", element: "岩", wepon: "單手劍", content: "現定居蒙德的鍊金術士\n效力於西風騎士團\n\n「天才」、「白堊之子」或「調查隊長」……\n他不怎麼在意稱號和名望\n只專注於研究課題\n\n財富和人脈不是他的目標\n他渴望駕馭的\n是從古到今深藏於人類頭腦中的無上知識。", country: "蒙德"),
         Card(name: "優菈", element: "冰", wepon: "雙手劍", content: "全名優菈·勞倫斯\n古老家族出身的「浪花騎士」\n西風騎士團游擊小隊隊長\n\n身為舊族後裔卻加入了堪稱死對頭的西風騎士團\n該事件至今仍是蒙德一大謎團\n", country: "蒙德"),
         Card(name: "刻晴", element: "雷", wepon: "單手劍", content:
-             "璃月七星之一\n玉衡星\n對「帝君一言而決的璃月」頗有微詞——但實際上\n神還滿欣賞她這樣的人\n\n她堅信與人類命運相關的事\n應當由人類去做\n而且人類一定可以做得更好\n為了證明這一點\n她比任何人都要努力\n", country: "璃月"),
+                "璃月七星之一\n玉衡星\n對「帝君一言而決的璃月」頗有微詞\n但實際上\n神還滿欣賞她這樣的人\n\n她堅信與人類命運相關的事\n應當由人類去做\n而且人類一定可以做得更好\n為了證明這一點\n她比任何人都要努力\n", country: "璃月"),
         Card(name: "七七", element: "冰", wepon: "單手劍", content: "藥廬「不卜廬」的採藥姑娘兼學徒\n\n因「仙緣」而擁有不死之身\n行動時需要自己對自己下敕令\n\n七七的記憶力非常差\n為了確保日常生活的順利\n她隨身攜帶著一本筆記\n寫有各種各樣的注意事項\n\n但在最不巧的那些日子裡\n她連「要看筆記」這件事都會忘記……\n", country: "璃月"),
         Card(name: "鍾離", element: "岩", wepon: "長柄武器", content: "應「往生堂」邀請而來的神秘客卿\n達達利亞的好友\n\n樣貌俊美、舉止高雅\n擁有遠超常人的學識\n\n雖說來歷不明\n卻知禮數、曉規矩\n坐鎮「往生堂」\n能行天地萬物之典儀\n\n其真實身份為岩王帝君「摩拉克斯」\n", country: "璃月"),
-        Card(name: "甘雨", element: "冰", wepon: "弓", content: "璃月七星的秘書\n體內流淌著人類與仙獸的血脈\n\n天性優雅嫻靜\n但仙獸「麒麟」溫柔的性情與堅定毅重的工作態度毫無衝突\n\n畢竟\n甘雨堅信自己所做的一切工作都是為了踐行與帝君的契約\n謀求璃月眾生的最大福祉\n", country: "璃月"),
+        Card(name: "甘雨", element: "冰", wepon: "弓", content: "璃月七星的秘書\n體內流淌著人類與仙獸的血脈\n\n天性優雅嫻靜\n但仙獸「麒麟」溫柔的性情與堅定毅重的工作態度毫無衝突\n\n畢竟\n甘雨堅信自己所做的一切工作\n都是為了踐行與帝君的契約\n謀求璃月眾生的最大福祉\n", country: "璃月"),
         Card(name: "魈", element: "風", wepon: "長柄武器", content: "守護璃月港的「三眼五顯仙人」之一\n妙稱「護法夜叉大將」\n\n雖然外表看起來是一個少年人\n但一些有關他的傳說\n已在古卷中流傳千年\n\n對望舒客棧中一道名為「杏仁豆腐」的菜頗為喜愛\n究其原因\n是因為「杏仁豆腐」的味道\n與他曾經吞噬過的「美夢」十分相似\n", country: "璃月"),
         Card(name: "胡桃", element: "火", wepon: "長柄武器", content:
-             "胡桃--「往生堂」第七十七代堂主\n掌控著璃月葬儀事務的重要人物\n\n盡心盡力地為人們完成送別之儀\n維維護著世間陰陽平衡之道\n\n 除此以外還是個神奇打油詩人\n諸多「傑作」被璃月人口口相傳\n", country: "璃月"),
+                "胡桃--「往生堂」第七十七代堂主\n掌控著璃月葬儀事務的重要人物\n\n盡心盡力地為人們完成送別之儀\n維維護著世間陰陽平衡之道\n\n 除此以外還是個神奇打油詩人\n諸多「傑作」被璃月人口口相傳\n", country: "璃月"),
         Card(name: "達達利亞", element: "水", wepon: "弓", content: "愚人眾執行官中的第十一席（末席）\n代號「公子」\n本名阿賈克斯\n\n向來心思變幻莫測\n不必猜測他的想法\n也無需質疑他的來意\n只要記住：\n這副稚氣未脫的外表下暗藏的\n是錘鍊到極致的戰士之軀\n", country: "至冬"),
         Card(name: "楓原萬葉", element: "風", wepon: "單手劍", content: "稻妻出身的浪人武士\n為人謙和\n個性溫順\n\n年輕瀟灑的外表下埋藏著許多往事\n看似隨性\n心中卻有獨屬於自己的行事準則\n\n摯友死於御前決鬥後帶著朋友的神之眼逃離稻妻\n後被北斗收留\n現在棲身於北斗的南十字艦隊\n可以敏銳聆聽自然的聲音\n", country: "稻妻"),
         Card(name: "神里綾華", element: "冰", wepon: "單手劍", content: "稻妻「社奉行」神里家的大小姐\n容姿端麗\n品行高潔\n\n並不深居簡出\n而是頻繁往來於稻妻的各個世界\n\n為人謙恭有禮\n進退有度\n又有一顆善心\n會對遭受苦難的人深出援手\n被民眾敬稱為「白鷺公主」\n\n與出任家主的哥哥神里綾人一同打點家族\n兄妹分工\n哥哥掌管政務\n妹妹則主理家族內外事宜\n", country: "稻妻"),
@@ -168,7 +168,7 @@ struct FoodView: View {
                             .resizable()
                             .scaledToFill()
                             .frame(width: 25, height: 25)
-
+                        
                         Text("派蒙")
                             .font(.largeTitle)
                     }
@@ -210,32 +210,46 @@ struct CharacterView: View {
     
     @State private var show = false
     
+    let colorGradient = [
+        "火": [Color(red: 1, green: 0.6, blue: 0.6117), Color(red: 0.98, green: 0.807, blue: 0.760)],
+        "水": [Color(red: 0.301, green: 0.974, blue: 0.996), Color(red: 0, green: 0.949, blue: 1)],
+        "風": [Color(red: 0.835, green: 0.988, blue: 0.470), Color(red: 0.596, green: 0.905, blue: 0.635)],
+        "雷": [Color(red: 0.623, green: 0.541, blue: 0.815), Color(red: 0.984, green: 0.756, blue: 0.917)],
+        "冰": [Color(red: 0.627, green: 0.768, blue: 0.992), Color(red: 0.756, green: 0.913, blue: 0.984)],
+        "岩": [Color(red: 0.964, green: 0.831, blue: 0.396), Color(red: 0.992, green: 0.635, blue: 0.525)]
+    ]
+    
     var body: some View{
+        
         NavigationView{
-            ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false){
-                VStack(alignment: .center){
-                    if show{
-                        Image(name)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 300, height: 550)
-                            .clipped()
-                            .transition(.opacity)
-                        
-                        VStack(alignment: .center){
-                            Text(wepon)
-                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                .padding()
-                            Text(content)
-                                .multilineTextAlignment(.center)
-                        }
+            VStack(alignment: .center){
+                if show{
+                    Image(name)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 300)
+                        .clipped()
+                        .transition(.opacity)
+                        .padding()
+                }
+                ScrollView(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/, showsIndicators: false){
+                    
+                    VStack(alignment: .center){
+                        Text(wepon)
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                            .padding()
+                        Text(content)
+                            .multilineTextAlignment(.center)
                     }
                 }
-                .animation(.easeIn(duration: 0.5), value: show)
-                .onAppear{
-                    show = true
-                }
             }
+            .animation(.easeIn(duration: 0.5), value: show)
+            .onAppear{
+                show = true
+            }
+            .background(LinearGradient(gradient: Gradient(colors: colorGradient[element]!), startPoint: UnitPoint(x: 0, y: 0), endPoint: UnitPoint(x: 1, y: 1)))
+            .cornerRadius(30)
+            
             .toolbar(content: {
                 ToolbarItem(placement: .principal) {
                     HStack{
@@ -243,7 +257,7 @@ struct CharacterView: View {
                             .resizable()
                             .scaledToFill()
                             .frame(width: 25, height: 25)
-
+                        
                         Text(name)
                             .font(.largeTitle)
                     }
@@ -251,9 +265,7 @@ struct CharacterView: View {
             })
             .navigationBarTitleDisplayMode(.inline)
         }
-        
     }
-    
 }
 
 struct CardView: View {
